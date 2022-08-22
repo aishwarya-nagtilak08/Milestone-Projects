@@ -18,9 +18,9 @@ def player_input():
         
     if marker == 'X':
         
-        return ('X','O')
+        return ("X","O")
     else:
-        return ('O','X’)
+        return ("O","X")
 
 
 def place_marker(board,marker,position):
@@ -43,7 +43,7 @@ def win_check(board, mark):
     
 
 
-win_check(test_board,'X’)
+win_check(test_board,"X")
 
 
 import random
@@ -57,7 +57,7 @@ def choose_first():
     
 
 def space_check(board, position):
-    return board[position == ' ‘]
+    return board[position == " "]
 
 
 def full_board_check(board):
@@ -79,7 +79,7 @@ def player_choice(board):
 def replay():
     choice = input('Do you want to play again? Yes/No')
     
-    return choice == ‘Yes'
+    return choice == "Yes"
 
 
 
@@ -96,7 +96,7 @@ while True:
     play_game = input('want to play? y or n')
     
     if play_game == 'y':
-        game_on = Truea
+        game_on = True
     else:
         game_on = False
         
